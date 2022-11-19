@@ -1,5 +1,6 @@
 # 2022_Computer_Architecture
 [NCKU computer architecture](http://wiki.csie.ncku.edu.tw/arch/schedule)
+
 Thanks [jserv](https://github.com/jserv) who is the professor of this course teach me a lot, and I have learned and growed very much.
 
 ## HW01
@@ -15,7 +16,9 @@ I will pick a [leetcode](https://leetcode.com/problems/three-consecutive-odds/) 
 ### Reference links
 
 [Lab0: Web-based RISC-V Emulators](https://hackmd.io/@sysprog/SJ7ht_MuS)
+
 [Lab1: RV32I Simulator](https://hackmd.io/@sysprog/H1TpVYMdB)
+
 [Assignment1: RISC-V Assembly and Instruction Pipeline](https://hackmd.io/@sysprog/2022-arch-homework1)
 
 ## Hw02
@@ -27,10 +30,13 @@ In this assignment, we will learn how to use [riscv-none-elf-gcc toolchain](http
 ### Development record
 
 [Computer Architecture HW2](https://hackmd.io/@wanghanchi/S1q0aBHQj)
+
 [rv32emu forked from sysprog21/rv32emu](https://github.com/WangHanChi/rv32emu)
 
 ### Reference links
 
 [Lab2: RISC-V RV32I[MACF] emulator with ELF support](https://hackmd.io/@sysprog/SJAR5XMmi)
+
 [Assignment2: RISC-V Toolchain](https://hackmd.io/@sysprog/2022-arch-homework2)
+
 [rv32emu](https://github.com/sysprog21/rv32emu)
