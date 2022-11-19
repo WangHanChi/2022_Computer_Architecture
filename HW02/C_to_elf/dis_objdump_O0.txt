@@ -113,11 +113,11 @@ Disassembly of section .text:
    10210:	fec42783          	lw	a5,-20(s0)
    10214:	00178793          	addi	a5,a5,1
    10218:	fef42623          	sw	a5,-20(s0)
-   1021c:	fec42703          	lw	a4,-20(s0)
-   10220:	fd842783          	lw	a5,-40(s0)
-   10224:	f8f740e3          	blt	a4,a5,101a4 <moveZeroes+0x20>
-   10228:	00000013          	nop
-   1022c:	00000013          	nop
+   1021c:	fec42783          	lw	a5,-20(s0)
+   10220:	fd842703          	lw	a4,-40(s0)
+   10224:	f8e7c0e3          	blt	a5,a4,101a4 <moveZeroes+0x20>
+   10228:	fec42783          	lw	a5,-20(s0)
+   1022c:	00078513          	mv	a0,a5
    10230:	02c12403          	lw	s0,44(sp)
    10234:	03010113          	addi	sp,sp,48
    10238:	00008067          	ret
