@@ -1,0 +1,315 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           RISC-V
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          29408 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         3
+  Size of section headers:           40 (bytes)
+  Number of section headers:         15
+  Section header string table index: 14
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        00000000 001000 003618 00  AX  0   0 16
+  [ 2] .data             PROGBITS        00020000 005000 000880 00  WA  0   0  8
+  [ 3] .bss              NOBITS          00020880 005880 000060 00  WA  0   0  4
+  [ 4] .riscv.attributes RISCV_ATTRIBUTE 00000000 005880 000025 00      0   0  1
+  [ 5] .comment          PROGBITS        00000000 0058a5 000033 01  MS  0   0  1
+  [ 6] .debug_line       PROGBITS        00000000 0058d8 000130 00      0   0  1
+  [ 7] .debug_line_str   PROGBITS        00000000 005a08 000030 01  MS  0   0  1
+  [ 8] .debug_info       PROGBITS        00000000 005a38 000025 00      0   0  1
+  [ 9] .debug_abbrev     PROGBITS        00000000 005a5d 000014 00      0   0  1
+  [10] .debug_aranges    PROGBITS        00000000 005a78 000020 00      0   0  8
+  [11] .debug_str        PROGBITS        00000000 005a98 00003c 01  MS  0   0  1
+  [12] .symtab           SYMTAB          00000000 005ad4 000f10 10     13 132  4
+  [13] .strtab           STRTAB          00000000 0069e4 000864 00      0   0  1
+  [14] .shstrtab         STRTAB          00000000 007248 000097 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  RISCV_ATTRIBUT 0x005880 0x00000000 0x00000000 0x00025 0x00000 R   0x1
+  LOAD           0x001000 0x00000000 0x00000000 0x03618 0x03618 R E 0x1000
+  LOAD           0x005000 0x00020000 0x00020000 0x00880 0x008e0 RW  0x1000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .riscv.attributes 
+   01     .text 
+   02     .data .bss 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+The decoding of unwind sections for machine type RISC-V is not currently supported.
+
+Symbol table '.symtab' contains 241 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 SECTION LOCAL  DEFAULT    1 .text
+     2: 00020000     0 SECTION LOCAL  DEFAULT    2 .data
+     3: 00020880     0 SECTION LOCAL  DEFAULT    3 .bss
+     4: 00000000     0 SECTION LOCAL  DEFAULT    4 .riscv.attributes
+     5: 00000000     0 SECTION LOCAL  DEFAULT    5 .comment
+     6: 00000000     0 SECTION LOCAL  DEFAULT    6 .debug_line
+     7: 00000000     0 SECTION LOCAL  DEFAULT    7 .debug_line_str
+     8: 00000000     0 SECTION LOCAL  DEFAULT    8 .debug_info
+     9: 00000000     0 SECTION LOCAL  DEFAULT    9 .debug_abbrev
+    10: 00000000     0 SECTION LOCAL  DEFAULT   10 .debug_aranges
+    11: 00000000     0 SECTION LOCAL  DEFAULT   11 .debug_str
+    12: 00000000     0 FILE    LOCAL  DEFAULT  ABS startup.o
+    13: 00000000     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    14: 00003290     0 NOTYPE  LOCAL  DEFAULT    1 trap_handler
+    15: 00000020     0 NOTYPE  LOCAL  DEFAULT    1 _bss_clear
+    16: 00003290     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    17: 000032d0     0 NOTYPE  LOCAL  DEFAULT    1 _trap_handler
+    18: 00003440     0 NOTYPE  LOCAL  DEFAULT    1 _trap_ebreak
+    19: 00003388     0 NOTYPE  LOCAL  DEFAULT    1 _trap_ecall
+    20: 00000000     0 FILE    LOCAL  DEFAULT  ABS ccRIzz5K.o
+    21: 00020022     0 NOTYPE  LOCAL  DEFAULT    2 addr_name
+    22: 00020027     0 NOTYPE  LOCAL  DEFAULT    2 addr_typed0
+    23: 0002002e     0 NOTYPE  LOCAL  DEFAULT    2 addr_typed1
+    24: 00020037     0 NOTYPE  LOCAL  DEFAULT    2 addr_typed2
+    25: 0002003e     0 NOTYPE  LOCAL  DEFAULT    2 SuccessResult
+    26: 00020043     0 NOTYPE  LOCAL  DEFAULT    2 FailResult
+    27: 00020048     0 NOTYPE  LOCAL  DEFAULT    2 test
+    28: 0002004c     0 NOTYPE  LOCAL  DEFAULT    2 iformat
+    29: 0000003c     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    30: 00000080     0 NOTYPE  LOCAL  DEFAULT    1 isLongPressed
+    31: 00000070     0 NOTYPE  LOCAL  DEFAULT    1 End
+    32: 00000138     0 NOTYPE  LOCAL  DEFAULT    1 Fail
+    33: 000000a0     0 NOTYPE  LOCAL  DEFAULT    1 If
+    34: 000000e4     0 NOTYPE  LOCAL  DEFAULT    1 checkLastCharacter
+    35: 000000bc     0 NOTYPE  LOCAL  DEFAULT    1 Else
+    36: 000000e8     0 NOTYPE  LOCAL  DEFAULT    1 if2
+    37: 0000011c     0 NOTYPE  LOCAL  DEFAULT    1 Pass
+    38: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-puts.o
+    39: 00000154     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    40: 00000280     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    41: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-strlen.o
+    42: 00000290     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    43: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-findfp.o
+    44: 0000031c     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    45: 00000328    64 FUNC    LOCAL  DEFAULT    1 __fp_lock
+    46: 00000328     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    47: 00000368    64 FUNC    LOCAL  DEFAULT    1 __fp_unlock
+    48: 00000368     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    49: 000003a8     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    50: 00000414     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    51: 00000428     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    52: 000005d8     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    53: 00000734     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    54: 00000740     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    55: 0000074c     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    56: 00000758     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    57: 00000764     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    58: 00000794     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    59: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-fvwrite.o
+    60: 000007c4     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    61: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-fwalk.o
+    62: 00000c60     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    63: 00000d04     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    64: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-impure.o
+    65: 00020050  1064 OBJECT  LOCAL  DEFAULT    2 impure_data
+    66: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-lock.o
+    67: 00000db8     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    68: 00000dbc     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    69: 00000dc0     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    70: 00000dc4     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    71: 00000dc8     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    72: 00000dcc     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    73: 00000dd0     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    74: 00000dd8     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    75: 00000de0     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    76: 00000de4     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    77: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-mallocr.o
+    78: 00000de8     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    79: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-memchr.o
+    80: 0000158c     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    81: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-memcpy.o
+    82: 00001650     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    83: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-memmove-stub.o
+    84: 000017f4     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    85: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-memset.o
+    86: 00001910     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    87: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-mlock.o
+    88: 000019ec     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    89: 000019f8     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    90: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-reallocr.o
+    91: 00001a04     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    92: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-sbrkr.o
+    93: 00001f5c     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    94: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-stdio.o
+    95: 00001fb4     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    96: 00002010     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    97: 00002018     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    98: 000020a0     0 NOTYPE  LOCAL  DEFAULT    1 $x
+    99: 00002118     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   100: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-writer.o
+   101: 00002120     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   102: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-wsetup.o
+   103: 00002184     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   104: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-closer.o
+   105: 000022c8     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   106: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-fclose.o
+   107: 00002320     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   108: 00002498     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   109: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-fflush.o
+   110: 000024a8     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   111: 000026f4     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   112: 000027d4     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   113: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-freer.o
+   114: 000028a0     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   115: 000029e0     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   116: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-lseekr.o
+   117: 00002cec     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   118: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-makebuf.o
+   119: 00002d50     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   120: 00002ee0     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   121: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-readr.o
+   122: 00002fb8     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   123: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-reent.o
+   124: 0000301c     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   125: 000030b0     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   126: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-fstatr.o
+   127: 000031d0     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   128: 00000000     0 FILE    LOCAL  DEFAULT  ABS lib_a-isattyr.o
+   129: 00003230     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   130: 00000000     0 FILE    LOCAL  DEFAULT  ABS syscall.c
+   131: 000034f8     0 NOTYPE  LOCAL  DEFAULT    1 $x
+   132: 00003230    88 FUNC    GLOBAL DEFAULT    1 _isatty_r
+   133: 0000301c   148 FUNC    GLOBAL DEFAULT    1 cleanup_glue
+   134: 00003610     8 FUNC    GLOBAL DEFAULT    1 _getpid
+   135: 000034f8    16 FUNC    GLOBAL DEFAULT    1 _putchar
+   136: 00000154   300 FUNC    GLOBAL DEFAULT    1 _puts_r
+   137: 00002cec   100 FUNC    GLOBAL DEFAULT    1 _lseek_r
+   138: 00020008     0 NOTYPE  GLOBAL DEFAULT    2 ___DTOR_LIST__
+   139: 00020898     1 OBJECT  GLOBAL DEFAULT    3 __lock___atexit_[...]
+   140: 000020a0   120 FUNC    GLOBAL DEFAULT    1 __sseek
+   141: 00000428   432 FUNC    GLOBAL DEFAULT    1 __sinit
+   142: 000003a8   108 FUNC    GLOBAL DEFAULT    1 __sfmoreglue
+   143: 000019f8    12 FUNC    GLOBAL DEFAULT    1 __malloc_unlock
+   144: 00020880     1 OBJECT  GLOBAL DEFAULT    3 __lock___arc4ran[...]
+   145: 000017f4   284 FUNC    GLOBAL DEFAULT    1 memmove
+   146: 00003618     0 NOTYPE  GLOBAL DEFAULT    1 _text_end
+   147: 00000414    20 FUNC    GLOBAL DEFAULT    1 _cleanup
+   148: 00000dc0     4 FUNC    GLOBAL DEFAULT    1 __retarget_lock_close
+   149: 000031d0    96 FUNC    GLOBAL DEFAULT    1 _fstat_r
+   150: 000208b0     4 OBJECT  GLOBAL DEFAULT    3 errno
+   151: 00002010     8 FUNC    GLOBAL DEFAULT    1 __seofread
+   152: 00001650   420 FUNC    GLOBAL DEFAULT    1 memcpy
+   153: 0000031c    12 FUNC    GLOBAL DEFAULT    1 _cleanup_r
+   154: 00020010     0 NOTYPE  GLOBAL DEFAULT    2 __DTOR_END__
+   155: 00000280    16 FUNC    GLOBAL DEFAULT    1 puts
+   156: 00003540     8 FUNC    GLOBAL DEFAULT    1 _fstat
+   157: 00020880     0 NOTYPE  GLOBAL DEFAULT    3 _bss_start
+   158: 000208ac     4 OBJECT  GLOBAL DEFAULT    3 __malloc_top_pad
+   159: 000007c4  1180 FUNC    GLOBAL DEFAULT    1 __sfvwrite_r
+   160: 00001f5c    88 FUNC    GLOBAL DEFAULT    1 _sbrk_r
+   161: 00000000     0 NOTYPE  GLOBAL DEFAULT    1 _text_start
+   162: 00002fb8   100 FUNC    GLOBAL DEFAULT    1 _read_r
+   163: 00002320   376 FUNC    GLOBAL DEFAULT    1 _fclose_r
+   164: 000027d4   204 FUNC    GLOBAL DEFAULT    1 fflush
+   165: 000208a8     4 OBJECT  GLOBAL DEFAULT    3 __malloc_max_sbr[...]
+   166: 000208b4     4 OBJECT  GLOBAL DEFAULT    3 heap_ptr
+   167: 0002088c     1 OBJECT  GLOBAL DEFAULT    3 __lock___env_rec[...]
+   168: 000035ac     8 FUNC    GLOBAL DEFAULT    1 _isatty
+   169: 000208a0     1 OBJECT  GLOBAL DEFAULT    3 __lock___sinit_r[...]
+   170: 00020010     4 OBJECT  GLOBAL DEFAULT    2 _global_impure_ptr
+   171: 00001a04  1368 FUNC    GLOBAL DEFAULT    1 _realloc_r
+   172: 00003514     8 FUNC    GLOBAL DEFAULT    1 _open
+   173: 000035b4    84 FUNC    GLOBAL DEFAULT    1 _sbrk
+   174: 00000764    48 FUNC    GLOBAL DEFAULT    1 __fp_lock_all
+   175: 000208e0     0 NOTYPE  GLOBAL DEFAULT    3 _bss_end
+   176: 000030b0   288 FUNC    GLOBAL DEFAULT    1 _reclaim_reent
+   177: 00020890     1 OBJECT  GLOBAL DEFAULT    3 __lock___malloc_[...]
+   178: 00000de4     4 FUNC    GLOBAL DEFAULT    1 __retarget_lock_[...]
+   179: 00000dd8     8 FUNC    GLOBAL DEFAULT    1 __retarget_lock_[...]
+   180: 00020000     0 NOTYPE  GLOBAL DEFAULT    2 __CTOR_LIST__
+   181: 00000734    12 FUNC    GLOBAL DEFAULT    1 __sfp_lock_acquire
+   182: 0000158c   196 FUNC    GLOBAL DEFAULT    1 memchr
+   183: 000029e0   780 FUNC    GLOBAL DEFAULT    1 _free_r
+   184: 00020018     4 OBJECT  GLOBAL DEFAULT    2 __malloc_sbrk_base
+   185: 00000000     0 NOTYPE  GLOBAL DEFAULT    1 _start
+   186: 00020000     0 NOTYPE  GLOBAL DEFAULT    2 _data_start
+   187: 00000dd0     8 FUNC    GLOBAL DEFAULT    1 __retarget_lock_[...]
+   188: 00003550     8 FUNC    GLOBAL DEFAULT    1 _lseek
+   189: 00020000     0 NOTYPE  GLOBAL DEFAULT    2 ___CTOR_LIST__
+   190: 000208b8    40 OBJECT  GLOBAL DEFAULT    3 __malloc_current[...]
+   191: 000022c8    88 FUNC    GLOBAL DEFAULT    1 _close_r
+   192: 00000dc4     4 FUNC    GLOBAL DEFAULT    1 __retarget_lock_[...]
+   193: 00020880     0 NOTYPE  GLOBAL DEFAULT    2 _data_end
+   194: 00002184   324 FUNC    GLOBAL DEFAULT    1 __swsetup_r
+   195: 00003508    12 FUNC    GLOBAL DEFAULT    1 _getchar
+   196: 000005d8   348 FUNC    GLOBAL DEFAULT    1 __sfp
+   197: 00020478  1032 OBJECT  GLOBAL DEFAULT    2 __malloc_av_
+   198: 00000758    12 FUNC    GLOBAL DEFAULT    1 __sinit_lock_release
+   199: 00001fb4    92 FUNC    GLOBAL DEFAULT    1 __sread
+   200: 000019ec    12 FUNC    GLOBAL DEFAULT    1 __malloc_lock
+   201: 000026f4   224 FUNC    GLOBAL DEFAULT    1 _fflush_r
+   202: 00000dcc     4 FUNC    GLOBAL DEFAULT    1 __retarget_lock_[...]
+   203: 00001910   220 FUNC    GLOBAL DEFAULT    1 memset
+   204: 0000003c     0 NOTYPE  GLOBAL DEFAULT    1 main
+   205: 000208a4     4 OBJECT  GLOBAL DEFAULT    3 __malloc_max_tot[...]
+   206: 00000dbc     4 FUNC    GLOBAL DEFAULT    1 __retarget_lock_[...]
+   207: 00002118     8 FUNC    GLOBAL DEFAULT    1 __sclose
+   208: 00002498    16 FUNC    GLOBAL DEFAULT    1 fclose
+   209: 00000de8  1956 FUNC    GLOBAL DEFAULT    1 _malloc_r
+   210: 00000c60   164 FUNC    GLOBAL DEFAULT    1 _fwalk
+   211: 000028a0   320 FUNC    GLOBAL DEFAULT    1 _malloc_trim_r
+   212: 00020008     0 NOTYPE  GLOBAL DEFAULT    2 __CTOR_END__
+   213: 00020008     0 NOTYPE  GLOBAL DEFAULT    2 __DTOR_LIST__
+   214: 00000db8     4 FUNC    GLOBAL DEFAULT    1 __retarget_lock_init
+   215: 00002120   100 FUNC    GLOBAL DEFAULT    1 _write_r
+   216: 00020014     4 OBJECT  GLOBAL DEFAULT    2 _impure_ptr
+   217: 000024a8   588 FUNC    GLOBAL DEFAULT    1 __sflush_r
+   218: 00000794    48 FUNC    GLOBAL DEFAULT    1 __fp_unlock_all
+   219: 00002ee0   216 FUNC    GLOBAL DEFAULT    1 __swhatbuf_r
+   220: 0000351c    36 FUNC    GLOBAL DEFAULT    1 _write
+   221: 000208e0     0 NOTYPE  GLOBAL DEFAULT    4 _end
+   222: 00020894     1 OBJECT  GLOBAL DEFAULT    3 __lock___at_quic[...]
+   223: 00002018   136 FUNC    GLOBAL DEFAULT    1 __swrite
+   224: 0002001c     4 OBJECT  GLOBAL DEFAULT    2 __malloc_trim_th[...]
+   225: 0000359c    16 FUNC    GLOBAL DEFAULT    1 exit
+   226: 00000d04   180 FUNC    GLOBAL DEFAULT    1 _fwalk_reent
+   227: 00003608     8 FUNC    GLOBAL DEFAULT    1 _kill
+   228: 00000740    12 FUNC    GLOBAL DEFAULT    1 __sfp_lock_release
+   229: 00003558    52 FUNC    GLOBAL DEFAULT    1 _read
+   230: 00000dc8     4 FUNC    GLOBAL DEFAULT    1 __retarget_lock_[...]
+   231: 00000de0     4 FUNC    GLOBAL DEFAULT    1 __retarget_lock_[...]
+   232: 0000358c    16 FUNC    GLOBAL DEFAULT    1 _exit
+   233: 00020884     1 OBJECT  GLOBAL DEFAULT    3 __lock___dd_hash[...]
+   234: 00002d50   400 FUNC    GLOBAL DEFAULT    1 __smakebuf_r
+   235: 00020888     1 OBJECT  GLOBAL DEFAULT    3 __lock___tz_mutex
+   236: 00000290   140 FUNC    GLOBAL DEFAULT    1 strlen
+   237: 00040000     0 NOTYPE  GLOBAL DEFAULT  ABS _stack
+   238: 0002089c     1 OBJECT  GLOBAL DEFAULT    3 __lock___sfp_rec[...]
+   239: 00003548     8 FUNC    GLOBAL DEFAULT    1 _close
+   240: 0000074c    12 FUNC    GLOBAL DEFAULT    1 __sinit_lock_acquire
+
+No version information found in this file.
+Attribute Section: riscv
+File Attributes
+  Tag_RISCV_stack_align: 16-bytes
+  Tag_RISCV_arch: "rv32i2p1_m2p0"
+  Tag_RISCV_priv_spec: 1
+  Tag_RISCV_priv_spec_minor: 11
